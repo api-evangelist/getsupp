@@ -1,7 +1,27 @@
 aid: getsupp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/getsupp.png
 name: Getsupp
-description: Getsupp is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Getsupp was an India-based digital health and wellness platform offering supplement
+  and nutrition product discovery, personalized health recommendations, and online
+  consultations with certified experts (nutritionists, dietitians, and coaches). The
+  company was a General Catalyst portfolio company and was subsequently absorbed into
+  Eka.care. As of this enrichment pass the getsupp.in and getsupp.com domains no longer
+  serve a standalone site: both resolve to Eka.io infrastructure (65.0.57.69, TLS cert
+  altnames *.eka.io) and return HTTP 404 for all paths. No public developer portal, API
+  documentation, OpenAPI, /.well-known/ discovery, or /llms.txt could be found. This
+  profile is retained as a portfolio lead with no enrichable API surface.
 url: https://raw.githubusercontent.com/api-evangelist/getsupp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,30 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-brand
+x-status-detail: 'Standalone brand absorbed into Eka.care; getsupp.in and getsupp.com resolve
+  to Eka.io infrastructure and return HTTP 404. No developer/API surface as of 2026-07-19.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Wellness
+- Nutrition
+- Supplements
+- Telehealth
+- Digital Health
+- Consumer
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
